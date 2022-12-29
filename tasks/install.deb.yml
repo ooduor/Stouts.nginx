@@ -3,7 +3,7 @@
 - include_vars: "{{ansible_distribution}}.yml"
 
 - name: Install dependencies
-  apt: name=python-pycurl
+  apt: name=python3-pycurl
 
 - name: Add nginx repository
   apt_repository: repo=ppa:nginx/stable
