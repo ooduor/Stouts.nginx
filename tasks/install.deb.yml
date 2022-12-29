@@ -7,9 +7,6 @@
 
 - name: Install nginx
   apt: name=nginx state=latest
-  
-  notify:
-    - restart nginx  
 
 - name: Install Dependencies
   apt: name={{item}}
